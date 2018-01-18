@@ -1,0 +1,70 @@
+.ksf-sign-up-container {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $ksf-colour-black-low-opacity;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+.ksf-sign-up-container:target {
+  display: block;
+}
+
+.ksf-sign-up-fields-container {
+  padding: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.ksf-sign-up-form {
+  margin-top: 15px;
+}
+
+.ksf-sign-up-form-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.ksf-sign-up-form-column-left {
+  margin-right: 7.5px;
+  width: 300px;
+}
+
+.ksf-sign-up-form-column-right {
+  margin-left: 7.5px;
+  width: 300px;
+}
+
+.ksf-sign-up-field-full {
+  width: 100%;
+}
+
+.ksf-sign-up-send {
+  margin-left: left;
+  margin-right: right;
+  color: $ksf-colour-black;
+}
+
+@media (min-width: 600px) {
+
+  .ksf-sign-up-fields-container {
+    padding: 23px;
+  }
+
+  .ksf-sign-up-form {
+    margin-top: 23px;
+  }
+
+  .ksf-sign-up-form-column-left {
+    margin-right: 11.5px;
+  }
+
+  .ksf-sign-up-form-column-right {
+    margin-left: 11.5px;
+  }
+
+}

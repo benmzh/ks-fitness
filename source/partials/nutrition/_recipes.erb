@@ -1,0 +1,263 @@
+<div class="ksf-taster-container" id="recipe-of-the-moment">
+  <h2>Recipe Of The Moment</h2>
+  <div class="ksf-formula-container">
+    <div class="ksf-formula-header ksf-formula-header-<%= dato.recipe_of_the_week.recipe_type %>">
+      <h2><%= dato.recipe_of_the_week.name %></h2>
+      <div class="ksf-formula-columns">
+        <div>
+          <p class="ksf-formula-small-print"><img class="ksf-formula-icon" src="../images/ksf-intensity-icon.png" alt="Difficulty"><%= dato.recipe_of_the_week.skill_level %></p>
+        </div>
+        <div>
+          <p class="ksf-formula-small-print"><img class="ksf-formula-icon" src="../images/ksf-time-icon.png" alt="Time"><%= dato.recipe_of_the_week.minutes %>m</p>
+        </div>
+        <div>
+          <p class="ksf-formula-small-print"><img class="ksf-formula-icon" src="../images/ksf-target-icon.png" alt="Servings">Serves <%= dato.recipe_of_the_week.servings %></p>
+        </div>
+      </div>
+      <div class="ksf-formula-columns ksf-formula-columns-recipe-dietary-calories">
+        <% if dato.recipe_of_the_week.dietary_info.size > 0 %>
+          <div>
+            <p class="ksf-formula-small-print ksf-formula-small-print-dietary-calories"><%= dato.recipe_of_the_week.dietary_info %></p>
+          </div>
+        <% end %>
+        <% if dato.recipe_of_the_week.calories.size > 0 %>
+          <div>
+            <p class="ksf-formula-small-print ksf-formula-small-print-dietary-calories"><%= dato.recipe_of_the_week.calories %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="ksf-formula-content ksf-formula-content-<%= dato.recipe_of_the_week.recipe_type %>">
+      <img class="ksf-recipe-image" src="<%= dato.recipe_of_the_week.picture.url(w: 500, fm: :jpg) %>" alt="<%= dato.recipe_of_the_week.name %>">
+      <div class="ksf-formula-content-text">
+        <div class="ksf-formula-columns ksf-formula-columns-content">
+          <div>
+            <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.ingredient_1.upcase %></p>
+            <% if dato.recipe_of_the_week.ingredient_2 %>
+              <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.ingredient_2.upcase %></p>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_3 %>
+              <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.ingredient_3.upcase %></p>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_4 %>
+              <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.ingredient_4.upcase %></p>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_5 %>
+              <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.ingredient_5.upcase %></p>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_6 %>
+              <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.ingredient_6.upcase %></p>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_7 %>
+              <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.ingredient_7.upcase %></p>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_8 %>
+              <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.ingredient_8.upcase %></p>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_9 %>
+              <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.ingredient_9.upcase %></p>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_10 %>
+              <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.ingredient_10.upcase %></p>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_11 %>
+              <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.ingredient_11.upcase %></p>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_12 %>
+              <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.ingredient_12.upcase %></p>
+            <% end %>
+          </div>
+          <div>
+            <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.amount_ingredient_1 %></p>
+            <% if dato.recipe_of_the_week.ingredient_2 %>
+              <% if dato.recipe_of_the_week.amount_ingredient_2.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.amount_ingredient_2 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_3 %>
+              <% if dato.recipe_of_the_week.amount_ingredient_3.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.amount_ingredient_3 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_4 %>
+              <% if dato.recipe_of_the_week.amount_ingredient_4.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.amount_ingredient_4 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_5 %>
+              <% if dato.recipe_of_the_week.amount_ingredient_5.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.amount_ingredient_5 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_6 %>
+              <% if dato.recipe_of_the_week.amount_ingredient_6.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.amount_ingredient_6 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_7 %>
+              <% if dato.recipe_of_the_week.amount_ingredient_7.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.amount_ingredient_7 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_8 %>
+              <% if dato.recipe_of_the_week.amount_ingredient_8.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.amount_ingredient_8 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_9 %>
+              <% if dato.recipe_of_the_week.amount_ingredient_9.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.amount_ingredient_9 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_10 %>
+              <% if dato.recipe_of_the_week.amount_ingredient_10.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.amount_ingredient_10 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_11 %>
+              <% if dato.recipe_of_the_week.amount_ingredient_11.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.amount_ingredient_11 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_12 %>
+              <% if dato.recipe_of_the_week.amount_ingredient_12.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.amount_ingredient_12 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+          </div>
+          <div>
+            <% if dato.recipe_of_the_week.ingredient_1 %>
+              <% if dato.recipe_of_the_week.notes_ingredient_1.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.notes_ingredient_1 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_2 %>
+              <% if dato.recipe_of_the_week.notes_ingredient_2.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.notes_ingredient_2 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_3 %>
+              <% if dato.recipe_of_the_week.notes_ingredient_3.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.notes_ingredient_3 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_4 %>
+              <% if dato.recipe_of_the_week.notes_ingredient_4.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.notes_ingredient_4 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_5 %>
+              <% if dato.recipe_of_the_week.notes_ingredient_5 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.notes_ingredient_5 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_6 %>
+              <% if dato.recipe_of_the_week.notes_ingredient_6.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.notes_ingredient_6 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_7 %>
+              <% if dato.recipe_of_the_week.notes_ingredient_7.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.notes_ingredient_7 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_8 %>
+              <% if dato.recipe_of_the_week.notes_ingredient_8 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.notes_ingredient_8 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_9 %>
+              <% if dato.recipe_of_the_week.notes_ingredient_9.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.notes_ingredient_9 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_10 %>
+              <% if dato.recipe_of_the_week.notes_ingredient_10.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.notes_ingredient_10 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_11 %>
+              <% if dato.recipe_of_the_week.notes_ingredient_11.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.notes_ingredient_11 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+            <% if dato.recipe_of_the_week.ingredient_12 %>
+              <% if dato.recipe_of_the_week.notes_ingredient_12.size > 0 %>
+                <p class="ksf-formula-small-print"><%= dato.recipe_of_the_week.notes_ingredient_12 %></p>
+              <% else %>
+                <p class="ksf-formula-small-print">&emsp;</p>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+        <% if dato.recipe_of_the_week.instruction_1.size > 0 %>
+          <p>1. <%= dato.recipe_of_the_week.instruction_1 %></p>
+        <% end %>
+        <% if dato.recipe_of_the_week.instruction_2.size > 0 %>
+          <p>2. <%= dato.recipe_of_the_week.instruction_2 %></p>
+        <% end %>
+        <% if dato.recipe_of_the_week.instruction_3.size > 0 %>
+          <p>3. <%= dato.recipe_of_the_week.instruction_3 %></p>
+        <% end %>
+        <% if dato.recipe_of_the_week.instruction_4.size > 0 %>
+          <p>4. <%= dato.recipe_of_the_week.instruction_4 %></p>
+        <% end %>
+        <% if dato.recipe_of_the_week.instruction_5.size > 0 %>
+          <p>5. <%= dato.recipe_of_the_week.instruction_5 %></p>
+        <% end %>
+        <% if dato.recipe_of_the_week.instruction_6.size > 0 %>
+          <p>6. <%= dato.recipe_of_the_week.instruction_6 %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="fb-share-button" data-href="https://ksfitness.ltd/nutrition/#recipe-of-the-moment" data-layout="button_count" data-size="large" data-mobile-iframe="false">
+    <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fksfitness.ltd%2Fnutrition%2F%23recipe-of-the-moment&amp;src=sdkpreparse">
+      Share
+    </a>
+  </div>
+</div>

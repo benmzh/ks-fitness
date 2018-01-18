@@ -1,0 +1,83 @@
+<div class="ksf-taster-container">
+  <h2>League Tables</h2>
+  <div class="ksf-formula-container" id="top-5">
+    <div class="ksf-formula-header ksf-formula-header-<%= dato.top_5.first_place_client_team %>">
+      <h2>Individuals</h2>
+      <p class="ksf-formula-small-print centre">
+        <%= dato.top_5.date %>
+      </p>
+    </div>
+    <div class="ksf-formula-content ksf-formula-content-<%= dato.top_5.first_place_client_team %>">
+      <div class="ksf-formula-content-text">
+        <div class="ksf-formula-columns ksf-formula-columns-content">
+          <div>
+            <br>
+            <p class="ksf-formula-small-print">1</p>
+            <p class="ksf-formula-small-print">2</p>
+            <p class="ksf-formula-small-print">3</p>
+            <p class="ksf-formula-small-print">4</p>
+            <p class="ksf-formula-small-print">5</p>
+          </div>
+          <div>
+            <br>
+            <p class="ksf-formula-small-print ksf-formula-small-print-<%= dato.top_5.first_place_client_team %>"><%= dato.top_5.first_place_client.upcase %></p>
+            <p class="ksf-formula-small-print ksf-formula-small-print-<%= dato.top_5.second_place_client_team %>"><%= dato.top_5.second_place_client.upcase %></p>
+            <p class="ksf-formula-small-print ksf-formula-small-print-<%= dato.top_5.third_place_client_team %>"><%= dato.top_5.third_place_client.upcase %></p>
+            <p class="ksf-formula-small-print ksf-formula-small-print-<%= dato.top_5.fourth_place_client_team %>"><%= dato.top_5.fourth_place_client.upcase %></p>
+            <p class="ksf-formula-small-print ksf-formula-small-print-<%= dato.top_5.fifth_place_client_team %>"><%= dato.top_5.fifth_place_client.upcase %></p>
+          </div>
+          <div>
+            <p class="ksf-formula-small-print">PTS</p>
+            <p class="ksf-formula-small-print">10</p>
+            <p class="ksf-formula-small-print">8</p>
+            <p class="ksf-formula-small-print">6</p>
+            <p class="ksf-formula-small-print">4</p>
+            <p class="ksf-formula-small-print">2</p>
+          </div>
+        </div>
+        <p><%= dato.top_5.write_up %></p>
+      </div>
+    </div>
+  </div>
+  <div class="fb-share-button" data-href="https://ksfitness.ltd/about#top-5" data-layout="button_count" data-size="large" data-mobile-iframe="false">
+    <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fksfitness.com%2Fabout%23top-5&amp;src=sdkpreparse">
+      Share
+    </a>
+  </div>
+  <div class="ksf-formula-container" id="teams">
+    <div class="ksf-formula-header ksf-formula-header-<%= dato.team.first_place_team.downcase %>">
+      <h2>Teams</h2>
+      <p class="ksf-formula-small-print centre"><%= dato.team.date %></p>
+    </div>
+    <div class="ksf-formula-content ksf-formula-content-<%= dato.team.first_place_team.downcase %>">
+      <div class="ksf-formula-content-text">
+        <div class="ksf-formula-columns ksf-formula-columns-content">
+          <div>
+            <br>
+            <p class="ksf-formula-small-print">1</p>
+            <p class="ksf-formula-small-print">2</p>
+            <p class="ksf-formula-small-print">3</p>
+          </div>
+          <div>
+            <br>
+            <p class="ksf-formula-small-print ksf-formula-small-print-<%= dato.team.first_place_team.downcase %>"><%= dato.team.first_place_team %></p>
+            <p class="ksf-formula-small-print ksf-formula-small-print-<%= dato.team.second_place_team.downcase %>"><%= dato.team.second_place_team %></p>
+            <p class="ksf-formula-small-print ksf-formula-small-print-<%= dato.team.third_place_team.downcase %>"><%= dato.team.third_place_team %></p>
+          </div>
+          <div>
+            <p class="ksf-formula-small-print">PTS</p>
+            <p class="ksf-formula-small-print"><%= dato.team.first_place_team_points %></p>
+            <p class="ksf-formula-small-print"><%= dato.team.second_place_team_points %></p>
+            <p class="ksf-formula-small-print"><%= dato.team.third_place_team_points %></p>
+          </div>
+        </div>
+        <p><%= dato.team.write_up %></p>
+      </div>
+    </div>
+  </div>
+  <div class="fb-share-button fb-share-button-no-bottom-margin" data-href="https://ksfitness.ltd/about#teams" data-layout="button_count" data-size="large" data-mobile-iframe="false">
+    <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fksfitness.com%2Fabout%23teams&amp;src=sdkpreparse">
+      Share
+    </a>
+  </div>
+</div>

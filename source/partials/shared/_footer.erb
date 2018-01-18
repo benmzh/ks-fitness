@@ -1,0 +1,33 @@
+<div class="ksf-section-container ksf-footer">
+  <div class="ksf-section-limiter">
+    <form action="https://web-workshop-messenger.herokuapp.com/f/cb45e0" method="post">
+      <textarea class="ksf-footer-form-field ksf-footer-form-field-full-width" placeholder="MESSAGE" name="Message" required ></textarea>
+      <div class="ksf-footer-form-bottom-row">
+        <input class="ksf-footer-form-field ksf-footer-field-email-number" type="text" placeholder="EMAIL OR NUMBER" name="Email or Number" required />
+        <button class="ksf-footer-form-field ksf-footer-field-send" type="Submit"><p class="ksf-call-to-action-text">SEND</p></button>
+      </div>
+    </form>
+    <div class="ksf-footer-bottom-row">
+      <a href="https://www.facebook.com/KevselleyPT/" target="_blank" alt="KS Fitness on Facebook">
+        <%= partial "partials/shared/icons/ksf-facebook-icon" %>
+      </a>
+      <a href="tel:07944380599" alt="Call KS Fitness">
+        <p class="ksf-footer-phone-number">07944 380 599</p>
+      </a>
+      <a href="https://www.instagram.com/ksfitnessltd/" target="_blank" alt="KS Fitness on Instagram">
+        <%= partial "partials/shared/icons/ksf-instagram-icon" %>
+      </a>
+    </div>
+    <footer class="ksf-footer-small-print-container">
+        <p class="ksf-footer-small-print">
+          &copy; KS Fitness <%= Time.now.strftime("%Y") %>
+        </p>
+        <a href="https://leigh.webworkshop.ltd" title="Leigh Web Workshop" target="_blank">
+          <p class="ksf-footer-small-print">
+            Website Design &amp; Hosting by Leigh Web Workshop&ensp;
+          </p>
+          <img class="ww-logo" src="images/ww-logo.svg" alt="Web Workshop Logo">
+        </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.ksf-client-hero-container {
+  padding: 0px;
+  color: $ksf-colour-white;
+}
+
+.ksf-hero-1, .ksf-hero-2, .ksf-hero-3, .ksf-hero-4, .ksf-hero-5, .ksf-hero-6 {
+  display: none;
+}
+
+.ksf-section-limiter-client-hero {
+  position: relative;
+}
+
+.ksf-client-hero {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ksf-client-hero-overlay-container {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 150px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.ksf-client-hero-overlay-container-strong {
+  background-color: $ksf-colour-red-low-opacity;
+}
+
+.ksf-client-hero-overlay-container-fit {
+  background-color: $ksf-colour-blue-low-opacity;
+}
+
+.ksf-client-hero-overlay-container-lean {
+  background-color: $ksf-colour-green-low-opacity;
+}
+
+@media (min-width: 600px) {
+
+  .ksf-client-hero-overlay-container {
+    bottom: 23px;
+    right: 23px;
+    padding: 8px;
+  }
+
+}

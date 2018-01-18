@@ -1,0 +1,96 @@
+.ksf-formula-container {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ksf-formula-header {
+  background-color: $ksf-colour-black;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $ksf-colour-black;
+  border-radius: 8px 8px 0px 0px;
+  padding: 15px;
+  color: $ksf-colour-white;
+}
+
+.ksf-formula-header-strong {
+  background-color: $ksf-colour-red;
+  border-color: $ksf-colour-red;
+}
+
+.ksf-formula-header-fit {
+  background-color: $ksf-colour-blue;
+  border-color: $ksf-colour-blue;
+}
+
+.ksf-formula-header-lean {
+  background-color: $ksf-colour-green;
+  border-color: $ksf-colour-green;
+}
+
+.ksf-formula-icon {
+  height: 13px;
+  width: auto;
+  margin: 0px 7px;
+}
+
+.ksf-formula-content {
+  border-style: solid;
+  border-width: 1px;
+  border-color: $ksf-colour-black;
+  border-radius: 0px 0px 8px 8px;
+  text-align: left;
+}
+
+.ksf-formula-content-strong {
+  border-color: $ksf-colour-red;
+}
+
+.ksf-formula-content-fit {
+  border-color: $ksf-colour-blue;
+}
+
+.ksf-formula-content-lean {
+  border-color: $ksf-colour-green;
+}
+
+.ksf-formula-content-text {
+  padding: 15px;
+}
+
+.ksf-formula-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ksf-formula-columns-recipe-dietary-calories {
+  justify-content: center;
+}
+
+.ksf-formula-columns-content {
+  margin-bottom: 15px;
+}
+
+.ksf-recipe-image {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+
+  .ksf-formula-header {
+    padding: 23px;
+  }
+
+  .ksf-formula-content-text {
+    padding: 23px;
+  }
+
+  .ksf-formula-columns-content {
+    margin-bottom: 23px;
+  }
+
+}

@@ -1,0 +1,58 @@
+<div class="ksf-section-container ksf-client-hero-container ksf-client-profiles-container">
+  <div class="ksf-taster-container">
+    <h2>Profiles</h2>
+    <p >Click on the names below to find out more about the KS Fitness family.</p>
+  </div>
+<% dato.client_profiles.each do |client_profile| %>
+  <div class="ksf-taster-container ksf-taster-container-client-profiles" id="<%= client_profile.name.capitalize %>">
+    <a href="#<%= client_profile.name.capitalize %>" alt="<%= client_profile.name.capitalize %>'s Profile">
+      <h2 class="ksf-<%= client_profile.team %>-colour-text">
+        <img class="ksf-team-icon" src="../images/ksf-<%= client_profile.team %>-icon.png" alt="Team <%= client_profile.team.capitalize %>">
+        <%= client_profile.name.capitalize %>
+        <img class="ksf-team-icon" src="../images/ksf-<%= client_profile.team %>-icon.png" alt="Team <%= client_profile.team.capitalize %>">
+      </h2>
+    </a>
+    <div class="ksf-section-limiter ksf-section-limiter-client-hero ksf-client-profiles-show-hide">
+      <img class="ksf-client-hero" src="<%= client_profile.photo.url(w: 500, fm: :jpg) %>" alt="KS Fitness's <%= client_profile.name.capitalize %>">
+      <div class="ksf-client-hero-overlay-container ksf-client-hero-overlay-container-<%= client_profile.team %>">
+        <p class="ksf-client-hero-text">'<%= client_profile.strapline %>'</p>
+      </div>
+    </div>
+  <% if client_profile.biography %>
+    <% if client_profile.biography.size > 0 %>
+    <div class="ksf-section-limiter ksf-profile-biography-text-container ksf-client-profiles-show-hide">
+    <%= markdown client_profile.biography %>
+    </div>
+    <% end %>
+  <% end %>
+  <% if client_profile.measurements %>
+    <% if client_profile.measurements.size > 0 %>
+    <h2 class="centre ksf-client-profiles-show-hide ksf-<%= client_profile.team %>-colour-text">Measurements</h2>
+    <div class="ksf-section-limiter ksf-profile-biography-text-container ksf-client-profiles-show-hide">
+      <%= markdown client_profile.measurements %>
+    </div>
+    <% end %>
+  <% end %>
+  <% if client_profile.personal_bests %>
+    <% if client_profile.personal_bests.size > 0 %>
+    <h2 class="centre ksf-client-profiles-show-hide ksf-<%= client_profile.team %>-colour-text">Personal Bests</h2>
+    <div class="ksf-section-limiter ksf-profile-biography-text-container ksf-client-profiles-show-hide">
+      <%= markdown client_profile.personal_bests %>
+    </div>
+    <% end %>
+  <% end %>
+  <% if client_profile.video %>
+    <div class="ksf-section-limiter ksf-client-profiles-show-hide">
+      <iframe class="ksf-video<% if client_profile.video_orientation == 'portrait'%>-portrait<% end %>" src="<%= client_profile.video.url.sub('vimeo.com', 'player.vimeo.com/video') %>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  <% end %>
+  <% if client_profile.testimonial %>
+    <% if client_profile.testimonial.size > 0 %>
+    <div class="ksf-section-limiter ksf-profile-biography-text-container ksf-client-profiles-show-hide">
+    <%= markdown client_profile.testimonial %>
+    </div>
+    <% end %>
+  <% end %>
+  </div>
+<% end %>
+</div>

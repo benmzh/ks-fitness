@@ -1,0 +1,51 @@
+.ksf-client-profiles-container {
+  color: $ksf-colour-black;
+}
+
+.ksf-client-profiles-container .ksf-client-hero-text {
+  color: $ksf-colour-white;
+}
+
+.ksf-team-icon {
+  height: 17px;
+  width: auto;
+  margin: 0px 10px;
+}
+
+.ksf-profile-biography-text-container {
+  text-align: left;
+}
+
+.ksf-profile-biography-text-container p {
+  @extend .ksf-multi-paragraph-text
+}
+
+.ksf-client-profiles-show-hide {
+  display: none;
+}
+
+.ksf-taster-container.ksf-taster-container-client-profiles {
+  padding-top: 0;
+}
+
+.ksf-taster-container.ksf-taster-container-client-profiles h2 {
+  margin-bottom: 0;
+}
+
+.ksf-taster-container.ksf-taster-container-client-profiles:target .ksf-client-profiles-show-hide {
+  display: block
+}
+
+.ksf-taster-container.ksf-taster-container-client-profiles:target {
+  padding-top: 15px;
+  @media (min-width: 600px) {
+    padding-top: 23px;
+  }
+}
+
+.ksf-taster-container.ksf-taster-container-client-profiles:target h2 {
+  margin-bottom: 12px;
+  @media (min-width: 600px) {
+    margin-bottom: 20px;
+  }
+}

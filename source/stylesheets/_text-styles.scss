@@ -1,0 +1,218 @@
+body {
+  font-family: "Avenir Next", "Lato", sans-serif;
+  font-size: 16px;
+  color: $ksf-colour-black;
+}
+
+h1 {
+  font-size: 1.6em;
+  margin: 0px;
+  line-height: 26px;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin: 0px 0px 12px 0px;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+
+}
+
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  font-style: italic;
+}
+
+h2.centre {
+  text-align: center;
+}
+
+.ksf-selector-item-centre h3 {
+  font-size: 7vw;
+  z-index: 2;
+}
+
+.ksf-selector-item-right h3, .ksf-selector-item-left h3 {
+  font-size: 4vw;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.ksf-selector-item-right:hover h3, .ksf-selector-item-left:hover h3 {
+  opacity: 1;
+}
+
+p.centre {
+  text-align: center;
+}
+
+p.ksf-multi-paragraph-text {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+p.ksf-top-line-no-margin {
+  margin-top: 0px;
+}
+
+p.ksf-client-hero-text {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.4em;
+}
+
+p.ksf-call-to-action-text {
+  font-weight: 700;
+  font-style: italic;
+  transition: color 0.3s;
+}
+
+.ksf-call-to-action-button:hover p.ksf-call-to-action-text {
+  color: $ksf-colour-white;
+}
+
+p.ksf-sign-up-text {
+  color: $ksf-colour-white;
+}
+
+p.ksf-taster-more-button-text {
+  font-weight: 700;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+p.ksf-taster-more-button-text:hover {
+  color: $ksf-colour-black;
+}
+
+p.ksf-formula-small-print {
+  font-size: 0.75em;
+}
+
+p.ksf-formula-small-print-dietary-calories {
+  margin: 0px 20px;
+}
+
+p.ksf-formula-small-print-strong {
+  font-weight: 700;
+  color: $ksf-colour-red;
+}
+
+p.ksf-formula-small-print-fit {
+  font-weight: 700;
+  color: $ksf-colour-blue;
+}
+
+p.ksf-formula-small-print-lean {
+  font-weight: 700;
+  color: $ksf-colour-green;
+}
+
+p.ksf-testimonial-text {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+p.ksf-testimonial-source {
+  text-align: right;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+p.ksf-testimonial-strong {
+  color: $ksf-colour-red;
+}
+
+p.ksf-testimonial-fit {
+  color: $ksf-colour-blue;
+}
+
+p.ksf-testimonial-lean {
+  color: $ksf-colour-green;
+}
+
+p.ksf-footer-phone-number {
+  color: $ksf-colour-white;
+  margin-top: 7px;
+}
+
+p.ksf-footer-small-print {
+  font-size: 0.75em;
+}
+
+span.bold {
+  font-weight: 700;
+}
+
+.ksf-yellow-text {
+  color: $ksf-colour-yellow;
+}
+
+.ksf-lean-colour-text {
+  color: $ksf-colour-green;
+}
+
+.ksf-strong-colour-text {
+  color: $ksf-colour-red;
+}
+
+.ksf-fit-colour-text {
+  color: $ksf-colour-blue;
+}
+
+@media (min-width:600px) {
+
+  h1 {
+    font-size: 2.4em;
+    line-height: 39px;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .ksf-selector-item-centre h3 {
+    font-size: 2.4em;
+  }
+
+  .ksf-selector-item-right h3, .ksf-selector-item-left h3 {
+    font-size: 24px;
+  }
+
+  p.ksf-formula-small-print {
+    font-size: 1em;
+  }
+
+  p.ksf-testimonial-text {
+    margin-bottom: 23px;
+  }
+
+  p.ksf-testimonial-source {
+    margin-top: 23px;
+  }
+
+  p.ksf-footer-phone-number {
+    margin-top: 12px;
+  }
+
+}

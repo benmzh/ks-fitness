@@ -1,0 +1,112 @@
+.ksf-selector-container {
+  position: relative;
+  height: 70vw;
+}
+
+.ksf-selector-item {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $ksf-colour-white;
+  border-radius: 5000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vw;
+  height: 30vw;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px $ksf-colour-black;
+  transition: height 0.3s, width 0.3s, top 0.3s, left 0.3s;
+}
+
+.ksf-selector-item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5000px;
+  width: 100%;
+  height: 100%;
+}
+
+.ksf-selector-item-centre {
+  width: 50vw;
+  height: 50vw;
+  z-index: 3;
+  left: 25vw;
+  top: 10vw;
+  box-shadow: 0px 0px 6px $ksf-colour-black;
+}
+
+.ksf-selector-item-left {
+  left: 5vw;
+  top: 20vw;
+}
+
+.ksf-selector-item-right {
+  left: 65vw;
+  top: 20vw;
+}
+
+.ksf-selector-item-strong {
+  background-image: url('../images/ksf-Oliver-bent-over-row.jpg');
+  background-size: 100%;
+  background-position: top;
+}
+
+.ksf-selector-item-overlay-strong {
+  background-color: $ksf-colour-red-low-opacity;
+}
+
+.ksf-selector-item-fit {
+  background-image: url('../images/ksf-Tony-deadlift.jpg');
+  background-size: 100%;
+  background-position: top;
+}
+
+.ksf-selector-item-overlay-fit {
+  background-color: $ksf-colour-blue-low-opacity;
+}
+
+.ksf-selector-item-lean {
+  background-image: url('../images/ksf-Nicolle-box-jump.jpg');
+  background-size: 123%;
+  background-position: top left;
+}
+
+.ksf-selector-item-overlay-lean {
+  background-color: $ksf-colour-green-low-opacity;
+}
+
+@media (min-width: 600px) {
+
+  .ksf-selector-container {
+    width: 600px;
+    height: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ksf-selector-item {
+    width: 180px;
+    height: 180px;
+  }
+
+  .ksf-selector-item-centre {
+    width: 300px;
+    height: 300px;
+    left: 150px;
+    top: 60px;
+  }
+
+  .ksf-selector-item-left {
+    left: 30px;
+    top: 120px;
+  }
+
+  .ksf-selector-item-right {
+    left: 390px;
+    top: 120px;
+  }
+
+}

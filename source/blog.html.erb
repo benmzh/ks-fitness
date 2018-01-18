@@ -1,0 +1,35 @@
+---
+title: Blog
+heading: "BLOG"
+---
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<% dato.blogs.each do |blog| %>
+<div class="ksf-section-container ksf-page-intro-text" id="<%= blog.title.downcase.gsub(' ', '-') %>">
+  <div class="ksf-section-limiter">
+    <h2 class="centre"><%= blog.title %></h2>
+    <p class="ksf-formula-small-print centre"><%= blog.author %> &middot; <%= blog.date %></p>
+    <div class="ksf-blog-body-text-container">
+      <%= markdown blog.body_text %>
+    </div>
+    <div class="fb-share-button-blog-page-container">
+      <div class="fb-share-button fb-share-button-blog-page" data-href="https://ksfitness.ltd/blog/#<%= blog.title.downcase.gsub(' ', '-') %>" data-layout="button_count" data-size="large" data-mobile-iframe="false">
+        <a class="fb-xfbml-parse-ignore" target="_blank" href="<%= "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fksfitness.ltd%2Fblog%2F%23X&amp;src=sdkpreparse".sub('X', blog.title.downcase.gsub(' ', '-')) %>">
+          Share
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  <% if blog.image %>
+<div class="ksf-section-limiter">
+  <img src="<%= blog.image.url(w: 500, fm: :jpg) %>" class="ksf-photoshoot-portrait" alt="KS Fitness <%= blog.title %> Blog Photo">
+</div>
+  <% end %>
+<% end %>

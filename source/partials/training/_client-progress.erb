@@ -1,0 +1,17 @@
+<div class="ksf-taster-container">
+  <h2>Client Progress</h2>
+  <% dato.client_progresses.each do |client_progress| %>
+    <h2 class="ksf-<%= client_progress.client_team %>-colour-text">
+      <img class="ksf-team-icon" src="../images/ksf-<%= client_progress.client_team %>-icon.png" alt="Team <%= client_progress.client_team.capitalize %>">
+    <%= client_progress.client_name.capitalize %>
+      <img class="ksf-team-icon" src="../images/ksf-<%= client_progress.client_team %>-icon.png" alt="Team <%= client_progress.client_team.capitalize %>">
+    </h2>
+    <img class="ksf-client-progress-image ksf-client-progress-image-margin-bottom" src="<%= client_progress.client_photo.url(w: 500, fm: :jpg) %>" alt="<%= client_progress.client_name.capitalize %> Before/After Progress"><br>
+    <% if client_progress.client_photo_2 %>
+    <img class="ksf-client-progress-image ksf-client-progress-image-margin-bottom" src="<%= client_progress.client_photo_2.url(w: 500, fm: :jpg) %>" alt="<%= client_progress.client_name.capitalize %> Before/After Progress"><br>
+    <% end %>
+    <% if client_progress.client_photo_3 %>
+    <img class="ksf-client-progress-image ksf-client-progress-image-margin-bottom" src="<%= client_progress.client_photo_3.url(w: 500, fm: :jpg) %>" alt="<%= client_progress.client_name.capitalize %> Before/After Progress"><br>
+    <% end %>
+  <% end %>
+</div>

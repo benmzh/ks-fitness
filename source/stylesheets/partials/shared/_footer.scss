@@ -1,0 +1,81 @@
+.ksf-footer {
+  background-color: $ksf-colour-black;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.ksf-footer-form-bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ksf-footer-form-field {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border-width: 0px;
+  height: 43px;
+}
+
+.ksf-footer-form-field-full-width {
+  width: 100%;
+}
+
+.ksf-footer-field-email-number {
+  width: 75%;
+  margin-right: 15px;
+}
+
+.ksf-footer-field-send {
+  width: 25%;
+  height: 45px;
+  color: $ksf-colour-white;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  background-color: $ksf-colour-black-low-opacity;
+}
+
+.ksf-footer-field-send:hover {
+  border-width: 3px;
+  border-style: solid;
+  border-color: $ksf-colour-white;
+  background: none;
+  color: $ksf-colour-white;
+}
+
+.ksf-footer-bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 33px;
+}
+
+.ksf-footer-small-print-container {
+  color: $ksf-colour-white;
+  margin-top: 15px;
+}
+
+.ww-logo {
+  height: 16px;
+  width: auto;
+  margin-top: 4px;
+}
+
+@media (min-width: 600px) {
+
+  .ksf-footer-form-field {
+    margin-bottom: 23px;
+  }
+
+  .ksf-footer-field-email-number {
+    margin-right: 23px;
+  }
+
+  .ksf-footer-bottom-row {
+    height: 43px;
+  }
+
+  .ksf-footer-small-print-container {
+    margin-top: 23px;
+  }
+
+}

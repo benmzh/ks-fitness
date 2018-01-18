@@ -1,0 +1,33 @@
+---
+title: Home
+heading: "WHAT WILL YOU BE?"
+---
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<%= partial "partials/index/thank-you" %>
+<%= partial "partials/index/oops" %>
+<%= partial "partials/index/client" %>
+<div class="ksf-call-to-action-container">
+  <a href="https://ksfitness.gettimely.com/book?location=83638&staff=157295" target="_blank" alt="Go To Booking System">
+    <div class="ksf-call-to-action-button">
+      <p class="ksf-call-to-action-text">
+        BOOK YOUR SESSION
+      </p>
+    </div>
+  </a>
+</div>
+<%= partial "partials/index/news-and-offers" %>
+<%= partial "partials/shared/sign-up" %>
+<%= partial "partials/index/videos" %>
+<%= partial "partials/shared/divider" %>
+<%= partial "partials/index/workout-plans" %>
+<%= partial "partials/shared/divider" %>
+<%= partial "partials/index/testimonials" %>
+<%= partial "partials/shared/divider" %>
+<%= partial "partials/index/nutrition" %>

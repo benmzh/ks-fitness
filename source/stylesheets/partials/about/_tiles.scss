@@ -1,0 +1,113 @@
+.ksf-about-tiles-container {
+  padding: 0px;
+  color: $ksf-colour-black;
+}
+
+.ksf-about-tiles-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.ksf-about-tile {
+  position: relative;
+  width: 50vw;
+  height: 50vw;
+  background-size: cover;
+}
+
+.ksf-about-tile-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.ksf-about-tile-no-colour-top {
+
+}
+
+.ksf-about-tile-strong-top {
+  background-image: url('../images/ksf-Clodagh-ropes.jpg');
+}
+
+.ksf-about-tile-strong-top .ksf-about-tile-overlay {
+  background-color: $ksf-colour-red-low-opacity;
+}
+
+
+.ksf-about-tile-fit-top {
+  background-image: url('../images/ksf-Rachel-before-after.jpg');
+}
+
+.ksf-about-tile-fit-top .ksf-about-tile-overlay {
+  background-color: $ksf-colour-blue-low-opacity;
+}
+
+.ksf-about-tile-lean-top {
+  background-image: url('../images/ksf-Nicolle-box-jump.jpg');
+}
+
+.ksf-about-tile-lean-top .ksf-about-tile-overlay {
+  background-color: $ksf-colour-green-low-opacity;
+}
+
+.ksf-about-tile-central {
+  width: 100vw;
+  height: 100vw;
+  background-image: url('../images/ksf-Kev-profile.JPG');
+  background-size: cover;
+  background-position: center;
+}
+
+.ksf-about-tile-strong-bottom {
+  background-image: url('../images/ksf-Oliver-squat.jpg');
+}
+
+.ksf-about-tile-strong-bottom .ksf-about-tile-overlay {
+  background-color: $ksf-colour-red-low-opacity;
+}
+
+.ksf-about-tile-fit-bottom {
+  background-image: url('../images/ksf-Tony-deadlift.jpg');
+}
+
+.ksf-about-tile-fit-bottom .ksf-about-tile-overlay {
+  background-color: $ksf-colour-blue-low-opacity;
+}
+
+.ksf-about-tile-lean-bottom {
+  background-image: url('../images/ksf-Lawrie-cables.jpg');
+}
+
+.ksf-about-tile-lean-bottom .ksf-about-tile-overlay {
+  background-color: $ksf-colour-green-low-opacity;
+}
+
+.ksf-about-tile-no-colour-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: $ksf-colour-red;
+  transition: background-color 0.6s;
+}
+
+.ksf-about-tile-logo {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 500px) {
+
+  .ksf-about-tile {
+    width: 250px;
+    height: 250px;
+  }
+
+  .ksf-about-tile-central {
+    width: 500px;
+    height: 500px;
+  }
+
+}

@@ -1,0 +1,151 @@
+<div class="ksf-taster-container">
+  <h2>Workout Plans</h2>
+  <div class="ksf-formula-container">
+    <div class="ksf-formula-header ksf-formula-header-<%= dato.workout_of_the_week.type_of_workout %>">
+      <h2><%= dato.workout_of_the_week.workout_name %></h2>
+      <div class="ksf-formula-columns">
+        <div>
+          <p class="ksf-formula-small-print"><img class="ksf-formula-icon" src="../images/ksf-intensity-icon.png" alt="Intensity"><%= dato.workout_of_the_week.intensity %></p>
+        </div>
+        <div>
+          <p class="ksf-formula-small-print"><img class="ksf-formula-icon" src="../images/ksf-time-icon.png" alt="Time"><%= dato.workout_of_the_week.minutes %>m</p>
+        </div>
+        <div>
+          <p class="ksf-formula-small-print"><img class="ksf-formula-icon" src="../images/ksf-target-icon.png" alt="Target Area"><%= dato.workout_of_the_week.target_areas %></p>
+        </div>
+      </div>
+    </div>
+    <div class="ksf-formula-content ksf-formula-content-<%= dato.workout_of_the_week.type_of_workout %>">
+      <div class="ksf-formula-content-text">
+        <p class="centre"><%= dato.workout_of_the_week.level %></p><br>
+        <div class="ksf-formula-columns ksf-formula-columns-content">
+          <div>
+            <br>
+            <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.activity_1.upcase %></p>
+            <% if dato.workout_of_the_week.activity_2 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.activity_2.upcase %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.activity_3 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.activity_3.upcase %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.activity_4 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.activity_4.upcase %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.activity_5 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.activity_5.upcase %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.activity_6 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.activity_6.upcase %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.activity_7 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.activity_7.upcase %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.activity_8 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.activity_8.upcase %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.activity_9 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.activity_9.upcase %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.activity_10 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.activity_10.upcase %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.activity_11 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.activity_11.upcase %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.activity_12 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.activity_12.upcase %></p>
+            <% end %>
+          </div>
+          <div>
+            <p class="ksf-formula-small-print">SETS</p>
+            <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.sets_activity_1 %></p>
+            <% if dato.workout_of_the_week.sets_activity_2 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.sets_activity_2 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.sets_activity_3 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.sets_activity_3 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.sets_activity_4 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.sets_activity_4 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.sets_activity_5 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.sets_activity_5 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.sets_activity_6 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.sets_activity_6 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.sets_activity_7 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.sets_activity_7 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.sets_activity_8 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.sets_activity_8 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.sets_activity_9 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.sets_activity_9 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.sets_activity_10 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.sets_activity_10 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.sets_activity_11 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.sets_activity_11 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.sets_activity_12 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.sets_activity_12 %></p>
+            <% end %>
+          </div>
+          <div>
+            <p class="ksf-formula-small-print">REPS</p>
+            <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.reps_activity_1 %></p>
+            <% if dato.workout_of_the_week.reps_activity_2 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.reps_activity_2 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.reps_activity_3 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.reps_activity_3 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.reps_activity_4 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.reps_activity_4 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.reps_activity_5 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.reps_activity_5 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.reps_activity_6 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.reps_activity_6 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.reps_activity_7 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.reps_activity_7 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.reps_activity_8 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.reps_activity_8 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.reps_activity_9 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.reps_activity_9 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.reps_activity_10 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.reps_activity_10 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.reps_activity_11 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.reps_activity_11 %></p>
+            <% end %>
+            <% if dato.workout_of_the_week.reps_activity_12 %>
+              <p class="ksf-formula-small-print"><%= dato.workout_of_the_week.reps_activity_12 %></p>
+            <% end %>
+          </div>
+        </div>
+        <p><%= dato.workout_of_the_week.description %></p>
+      </div>
+    </div>
+  </div>
+  <a href="/training" alt="Get More Workouts">
+    <div class="ksf-taster-more-button">
+      <p class="ksf-taster-more-button-text">
+        More
+      </p>
+    </div>
+  </a>
+  <div class="ksf-spacer-div"></div>
+  <div class="ksf-section-limiter ksf-taster-paragraph">
+    <p>
+      We train many of our clients in Romford, just 20 minutes from Stratford. If you can't get to us, we offer online personal training to clients all over the world. All you need is an internet connection and a vision of what you want to achieve. WHAT WILL YOU BE? Get in touch and tell us.</p>
+    </p>
+  </div>
+</div>

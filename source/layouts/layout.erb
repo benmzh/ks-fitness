@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+  <%= partial "partials/shared/head" %>
+  <body>
+    <%= partial "partials/shared/header" %>
+    <%= yield %>
+    <%= partial "partials/shared/footer" %>
+    <%= partial "partials/shared/thank-you-oops" %>
+    <%= javascript_include_tag "site.js" %>
+  </body>
+</html>

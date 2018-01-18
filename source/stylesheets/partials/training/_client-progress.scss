@@ -1,0 +1,19 @@
+.ksf-client-progress-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ksf-client-progress-image-margin-bottom {
+  margin-bottom: 12px;
+}
+
+@media (min-width: 600px) {
+
+  .ksf-client-progress-image-margin-bottom {
+    margin-bottom: 20px;
+  }
+
+}

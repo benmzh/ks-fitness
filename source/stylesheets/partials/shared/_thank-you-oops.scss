@@ -1,0 +1,36 @@
+.ksf-thank-you-oops-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: $ksf-colour-white-low-opacity;
+}
+
+#thank-you:target {
+  display: flex;
+}
+
+#oops:target {
+  display: flex;
+}
+
+.ksf-thank-you-oops-message {
+  width: 80%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ksf-thank-you-oops-message a {
+  font-weight: 700;
+}
+
+.ksf-thank-you-oops-close-cross {
+  margin-top: 20px;
+}

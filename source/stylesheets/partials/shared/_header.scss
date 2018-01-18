@@ -1,0 +1,76 @@
+.ksf-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0px 15px;
+  background-color: $ksf-colour-black;
+  transition: background-color 0.3s;
+}
+
+.ksf-menu-logo {
+  height: 35px;
+  width: auto;
+  margin-top: 10px;
+}
+
+.ksf-menu-icon {
+  height: 25px;
+  width: auto;
+  margin-top: 15px;
+  transition: height 0.2s, width 0.2s, margin-top 0.2s;
+}
+
+.ksf-menu-icon:hover {
+  height: 31px;
+  margin-top: 12px;
+}
+
+.ksf-menu-icon-training {
+  height: 24px;
+  margin: 16px 1px;
+}
+
+.ksf-page-heading-bar {
+  background-color: $ksf-colour-black;
+  color: $ksf-colour-white;
+  height: 34px;
+  padding: 0px 15px 0px 15px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+@media (min-width:600px) {
+
+  .ksf-menu {
+    height: 94px;
+    padding: 0px 23px;
+  }
+
+  .ksf-menu-logo {
+    height: 53px;
+    margin-top: 15px;
+  }
+
+  .ksf-menu-icon {
+    height: 38px;
+    margin-top: 23px;
+  }
+
+  .ksf-menu-icon:hover {
+    height: 47px;
+    margin-top: 18px;
+  }
+
+  .ksf-menu-icon-training {
+    height: 36px;
+    margin: 24px 2px;
+  }
+
+  .ksf-page-heading-bar {
+    height: 51px;
+    padding: 0px 23px 0px 23px;
+  }
+
+
+}

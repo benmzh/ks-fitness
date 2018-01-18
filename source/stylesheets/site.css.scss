@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+@import "utils/normalize";
+@import "utils/colours";
+
+@import "text-styles";
+
+@import "partials/shared/header";
+@import "partials/shared/sign-up";
+@import "partials/shared/footer";
+@import "partials/shared/selector";
+@import "partials/shared/call-to-action";
+@import "partials/shared/divider";
+@import "partials/shared/formula";
+@import "partials/shared/section-container";
+@import "partials/shared/page-intro";
+@import "partials/shared/fb-share-button";
+@import "partials/shared/social-icons";
+@import "partials/shared/thank-you-oops";
+
+@import "partials/index/client";
+@import "partials/index/news-and-offers";
+@import "partials/index/videos";
+@import "partials/index/social";
+@import "partials/index/workout-plans";
+@import "partials/index/testimonials";
+@import "partials/index/nutrition";
+@import "partials/index/taster";
+@import "partials/index/thank-you-oops";
+
+@import "partials/about/tiles";
+@import "partials/about/profiles";
+
+@import "partials/training/workouts";
+@import "partials/training/client-progress";
+
+@import "partials/nutrition/recipes";
+
+@import "partials/blog/blog";
+
+.ksf-spacer-div {
+  width: 100%;
+  height: 15px;
+}
+
+.ksf-photoshoot-portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+
+  body {
+    background-image: url('../images/ksf-background-desktop.png');
+    background-size: 500px 500px;
+    background-repeat: repeat;
+  }
+
+  .ksf-spacer-div {
+    height: 23px;
+  }
+
+}

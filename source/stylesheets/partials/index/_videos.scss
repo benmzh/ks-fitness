@@ -1,0 +1,21 @@
+.ksf-video {
+  width: 100%;
+  height: 50vw;
+}
+
+.ksf-video-portrait {
+  width: 70%;
+  height: 115vw;
+}
+
+@media (min-width: 600px) {
+
+  .ksf-video {
+    height: 280px;
+  }
+
+  .ksf-video-portrait {
+    height: 620px;
+  }
+
+}

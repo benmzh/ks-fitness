@@ -1,2 +1,2 @@
 # ks-fitness
-Code and assets for the KS Fitness website
+For all code and files related to the website for KS Fitness

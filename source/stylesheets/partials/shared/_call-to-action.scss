@@ -1,0 +1,40 @@
+.ksf-call-to-action-container {
+   text-align: center;
+   background-image: url('../images/ksf-call-to-action-neutral-background.png');
+   background-size: cover;
+   background-position: center;
+   padding: 15px;
+   color: $ksf-colour-green;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+.ksf-call-to-action-button {
+  width: 200px;
+  height: 20px;
+  padding: 8px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $ksf-colour-white;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: $ksf-colour-white;
+  transition: background-color 0.2s;
+}
+
+.ksf-call-to-action-button:hover {
+  background: none;
+}
+
+
+@media (min-width:600px) {
+
+  .ksf-call-to-action-container {
+    padding: 23px;
+  }
+
+  .ksf-call-to-action-button {
+    border-width: 3px;
+  }
+
+}
